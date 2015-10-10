@@ -2,6 +2,8 @@
 // http://thinkit.co.jp/article/16/4/3.html
 
 using System;
+using System.Diagnostics;
+using System.Reflection;
 using System.Windows;
 
 namespace WpfApplication1
@@ -41,6 +43,7 @@ namespace WpfApplication1
             }
             catch
             {
+                Debug.Assert(false, MethodBase.GetCurrentMethod().Name + "で例外が発生しました");
             }
         }
 
@@ -58,6 +61,7 @@ namespace WpfApplication1
             }
             catch
             {
+                Debug.Assert(false, MethodBase.GetCurrentMethod().Name + "で例外が発生しました");
             }
         }
 
@@ -75,6 +79,7 @@ namespace WpfApplication1
             }
             catch
             {
+                Debug.Assert(false, MethodBase.GetCurrentMethod().Name + "で例外が発生しました");
             }
         }
 
@@ -92,6 +97,7 @@ namespace WpfApplication1
             }
             catch
             {
+                Debug.Assert(false, MethodBase.GetCurrentMethod().Name + "で例外が発生しました");
             }
         }
 
@@ -109,7 +115,7 @@ namespace WpfApplication1
             }
             catch
             {
-
+                Debug.Assert(false, MethodBase.GetCurrentMethod().Name + "で例外が発生しました");
             }
         }
 
@@ -126,6 +132,7 @@ namespace WpfApplication1
             }
             catch
             {
+                Debug.Assert(false, MethodBase.GetCurrentMethod().Name + "で例外が発生しました");
             }
         }
 
@@ -150,6 +157,7 @@ namespace WpfApplication1
             }
             catch
             {
+                Debug.Assert(false, MethodBase.GetCurrentMethod().Name + "で例外が発生しました");
             }
         }
     }
