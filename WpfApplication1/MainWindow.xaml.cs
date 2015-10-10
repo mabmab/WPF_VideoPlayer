@@ -33,8 +33,8 @@ namespace WpfApplication1
         /// メディア初期化完了イベント
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void MediaElement1_Initialized(object sender, EventArgs e)
+        /// <param name="args"></param>
+        private void OnMediaElement1Initialized(object sender, EventArgs args)
         {
             try
             {
@@ -51,8 +51,8 @@ namespace WpfApplication1
         /// メディアオープン完了イベント
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void MediaElement1_MediaOpened(object sender, RoutedEventArgs e)
+        /// <param name="args"></param>
+        private void OnMediaElement1MediaOpened(object sender, RoutedEventArgs args)
         {
             try
             {
@@ -69,8 +69,8 @@ namespace WpfApplication1
         /// 再生ボタン押下イベント
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnPlay_Click(object sender, RoutedEventArgs e)
+        /// <param name="args"></param>
+        private void OnPlayButtonClick(object sender, RoutedEventArgs args)
         {
             try
             {
@@ -87,8 +87,8 @@ namespace WpfApplication1
         /// 一時停止ボタン押下イベント
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnPause_Click(object sender, RoutedEventArgs e)
+        /// <param name="args"></param>
+        private void OnPauseButtonClick(object sender, RoutedEventArgs args)
         {
             try
             {
@@ -105,8 +105,8 @@ namespace WpfApplication1
         /// 再生停止ボタン押下イベント
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void btnStop_Click(object sender, RoutedEventArgs e)
+        /// <param name="args"></param>
+        private void OnStopButtonClick(object sender, RoutedEventArgs args)
         {
             try
             {
@@ -123,8 +123,8 @@ namespace WpfApplication1
         /// 音声ボリューム可変イベント
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void sliderVol_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        /// <param name="args"></param>
+        private void OnVolumeSliderValueChanged(object sender, RoutedPropertyChangedEventArgs<double> args)
         {
             try
             {
@@ -140,8 +140,8 @@ namespace WpfApplication1
         /// 再生位置変更イベント
         /// </summary>
         /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void sliderPos_ValueChanged(object sender, RoutedPropertyChangedEventArgs<double> e)
+        /// <param name="args"></param>
+        private void OnPositionSliderValueChanged(object sender, RoutedPropertyChangedEventArgs<double> args)
         {
             try
             {

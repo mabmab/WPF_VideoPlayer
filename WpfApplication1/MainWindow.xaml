@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="Video Player" Height="180" Width="240">
     <DockPanel>
-        <Slider x:Name="sliderPos" DockPanel.Dock="Bottom" Height="20" MinWidth="100" MinHeight="20" ValueChanged="sliderPos_ValueChanged"/>
+        <Slider x:Name="sliderPos" DockPanel.Dock="Bottom" Height="20" MinWidth="100" MinHeight="20" ValueChanged="OnPositionSliderValueChanged"/>
         <DockPanel Height="20" DockPanel.Dock="Top">
-            <Button x:Name="btnPlay" Content="再生" Height="20" Width="50" HorizontalAlignment="Left" Click="btnPlay_Click"/>
-            <Button x:Name="btnPause" Content="一時停止" Height="20" Width="50" HorizontalAlignment="Left" Click="btnPause_Click"/>
-            <Button x:Name="btnStop" Content="再生停止" Height="20" Width="50" HorizontalAlignment="Left" Click="btnStop_Click"/>
-            <Slider x:Name="sliderVol" Height="20" ValueChanged="sliderVol_ValueChanged" Maximum="1"/>
+            <Button x:Name="btnPlay" Content="再生" Height="20" Width="50" HorizontalAlignment="Left" Click="OnPlayButtonClick"/>
+            <Button x:Name="btnPause" Content="一時停止" Height="20" Width="50" HorizontalAlignment="Left" Click="OnPauseButtonClick"/>
+            <Button x:Name="btnStop" Content="再生停止" Height="20" Width="50" HorizontalAlignment="Left" Click="OnStopButtonClick"/>
+            <Slider x:Name="sliderVol" Height="20" ValueChanged="OnVolumeSliderValueChanged" Maximum="1"/>
         </DockPanel>
-        <MediaElement x:Name="MediaElement1" Source="C:\Users\Manabu\Documents\Visual Studio 2015\Projects\20110424124607.m2ts" LoadedBehavior="Manual" Initialized="MediaElement1_Initialized" MediaOpened="MediaElement1_MediaOpened"/>
+        <MediaElement x:Name="MediaElement1" Source="C:\Users\Manabu\Documents\Visual Studio 2015\Projects\20110424124607.m2ts" LoadedBehavior="Manual" Initialized="OnMediaElement1Initialized" MediaOpened="OnMediaElement1MediaOpened"/>
     </DockPanel>
 
 </Window>
